@@ -21,7 +21,7 @@ using LabManager.Repositories;
                Console.WriteLine("{0},{1},{2}", computer.Id, computer.Ram, computer.Processor);
            }
         }
-        
+
         if(modelAction == "New"){
             var conection = new SqliteConnection("Data Source=database.db");
             conection.Open();
