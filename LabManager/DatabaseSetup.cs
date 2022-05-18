@@ -6,10 +6,6 @@ class DatabaseSetup
 {
     private DatabaseConfig databaseConfig;
 
-    public DatabaseSetup()
-    {
-    }
-
     public DatabaseSetup (DatabaseConfig databaseConfig)
     {
         this.databaseConfig = databaseConfig;
