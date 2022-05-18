@@ -1,18 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using LabManager.Database;
-using LabManager.Repositories;
 using Microsoft.Data.Sqlite;
 
-Console.WriteLine(args);
-
-foreach (var arg in args)
-{
-    Console.WriteLine(arg);
-}
-    var databaseConfig = new DatabaseConfig();
-    new DatabaseSetup(databaseConfig);
-
-    var computerRepository = new ComputerRepository(databaseConfig);
+    var databaseSetup = new DatabaseSetup();
 
     //Routing -- Roteamento
 

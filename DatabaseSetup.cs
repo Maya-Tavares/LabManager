@@ -6,13 +6,17 @@ class DatabaseSetup
 {
     private DatabaseConfig databaseConfig;
 
+    public DatabaseSetup()
+    {
+    }
+
     public DatabaseSetup (DatabaseConfig databaseConfig)
     {
         this.databaseConfig = databaseConfig;
         CreateComputerTable();
     }
 
-    public void CreateComputerTable()
+    private void CreateComputerTable()
     {
         
         var conection = new SqliteConnection("Data Source=database.db");
