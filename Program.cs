@@ -33,6 +33,15 @@ using LabManager.Repositories;
             computerRepository.Save(computer);
         }
 
+        if(modelAction == "Show")
+        {
+
+            var id = Convert.ToInt32(args[2]);
+            var computer = ComputerRepository.GetById(id);
+            Console.WriteLine($"{computer.Id}, {computer.Ram}, {computer.Processor}");
+        }
+    
+
         //var command = conection.CreateCommand();
         //command.CommandText = "INSERT INTO Computers VALUES($id, $ram, $processor)";
         //command.Parameters.AddWithValue("$id", id);
