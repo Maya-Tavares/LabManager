@@ -39,8 +39,26 @@ using LabManager.Repositories;
             var id = Convert.ToInt32(args[2]);
             var computer = ComputerRepository.GetById(id);
             Console.WriteLine($"{computer.Id}, {computer.Ram}, {computer.Processor}");
+
+        }
+
+        if(modelAction == "Update")
+        {
+
+            var id = Convert.ToInt32(args[2]);
+            string ram = args[3];
+            string processor = args[4];
+
+            var computer = new Computer(id, ram, processor);
+            computerRepository.Update(computer);
         }
     
+        if(modelAction == "Delete")
+        {
+
+            var id = Convert.ToInt32(args[2]);
+            computerRepository.Delete(id);
+        }
 
         //var command = conection.CreateCommand();
         //command.CommandText = "INSERT INTO Computers VALUES($id, $ram, $processor)";
