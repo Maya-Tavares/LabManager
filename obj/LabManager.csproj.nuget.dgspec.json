@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\KKaro\\Desktop\\MAYA\\LP3\\LabManager\\LabManager\\LabManager.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\KKaro\\Desktop\\MAYA\\LP3\\LabManager\\LabManager\\LabManager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\KKaro\\Desktop\\MAYA\\LP3\\LabManager\\LabManager\\LabManager.csproj",
+        "projectName": "LabManager",
+        "projectPath": "C:\\Users\\KKaro\\Desktop\\MAYA\\LP3\\LabManager\\LabManager\\LabManager.csproj",
+        "packagesPath": "C:\\Users\\KKaro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KKaro\\Desktop\\MAYA\\LP3\\LabManager\\LabManager\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\KKaro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

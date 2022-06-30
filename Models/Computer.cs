@@ -6,9 +6,10 @@ class Computer {
     public string Ram { get; set; }
     public string Processor { get; set; }
 
-    public Computer (int id, string ram, string processor){
+    public Computer (int id, string ram, string processor)
+    {
         Id = id;
-        Ram =ram;
+        Ram = ram;
         Processor = processor;
     }
 

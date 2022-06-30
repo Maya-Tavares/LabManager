@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Dapper/2.0.123": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {}
+        }
+      },
       "Microsoft.Data.Sqlite/6.0.5": {
         "type": "package",
         "dependencies": {
@@ -148,6 +157,24 @@
     }
   },
   "libraries": {
+    "Dapper/2.0.123": {
+      "sha512": "RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+      "type": "package",
+      "path": "dapper/2.0.123",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.0.123.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
     "Microsoft.Data.Sqlite/6.0.5": {
       "sha512": "1N2RKxj6ABpdluueSzv29oTFaEqoft6cotl4OoYo2LR8MN3puORCnBhMvHmiBgL5hDF7nLS/+goeLg9KmiLVlw==",
       "type": "package",
@@ -275,34 +302,29 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.Data.Sqlite >= 6.0.5"
+      "Microsoft.Data.Sqlite >= 6.0.5",
+      "dapper >= 2.0.123"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IFSP\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\KKaro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IFSP\\Desktop\\SP3027449\\SP3027449.csproj",
-      "projectName": "SP3027449",
-      "projectPath": "C:\\Users\\IFSP\\Desktop\\SP3027449\\SP3027449.csproj",
-      "packagesPath": "C:\\Users\\IFSP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IFSP\\Desktop\\SP3027449\\obj\\",
+      "projectUniqueName": "C:\\Users\\KKaro\\Desktop\\MAYA\\LP3\\LabManager\\LabManager\\LabManager.csproj",
+      "projectName": "LabManager",
+      "projectPath": "C:\\Users\\KKaro\\Desktop\\MAYA\\LP3\\LabManager\\LabManager\\LabManager.csproj",
+      "packagesPath": "C:\\Users\\KKaro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KKaro\\Desktop\\MAYA\\LP3\\LabManager\\LabManager\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\IFSP\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\KKaro\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -324,6 +346,10 @@
           "Microsoft.Data.Sqlite": {
             "target": "Package",
             "version": "[6.0.5, )"
+          },
+          "dapper": {
+            "target": "Package",
+            "version": "[2.0.123, )"
           }
         },
         "imports": [
@@ -341,7 +367,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
